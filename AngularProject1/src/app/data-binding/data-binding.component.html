@@ -1,0 +1,15 @@
+<h1><samp>{{name}}</samp></h1>
+<h1>
+    <input [(ngModel)]="name"/>
+</h1> 
+<ul>
+    
+    <div >
+        <input type="radio" name="muraai" (click)="colorApp('red')"/>
+        <input type="radio" name="muraai" (click)="colorApp('blue')"/>
+        <input type="radio" name="muraai" (click)="colorApp('green')"/>
+    </div>
+
+    <div [style.background-color]="color">
+            {{color}}
+    </div>

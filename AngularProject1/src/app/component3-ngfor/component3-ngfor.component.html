@@ -1,0 +1,21 @@
+<p>ngFor</p>
+<table class="table">
+<thead class="thead-dark">
+    <tr>
+        <td>ProductName</td>
+        <td>ProductID</td>
+        <td>ProductPrice</td>
+       
+</tr>
+</thead>
+<tbody>
+    <tr *ngFor="let myPro of products">
+        <td>{{myPro.name}}</td>
+        <td>{{myPro.id}}</td>
+        <td>{{myPro.price}}</td>
+       
+</tr>   
+</tbody>
+
+</table>
+

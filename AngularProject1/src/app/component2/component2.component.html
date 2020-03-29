@@ -1,0 +1,18 @@
+ <div>
+    <button (click)="getProductValue()">display</button>
+    <select >
+        <option value="lap" id="1">laptop</option>
+        <option value="mob" id="2">mobile</option>
+        <option value="tv" id="3">tv</option>
+    </select>
+</div>
+<div [ngSwitch]="selectedProduct">
+    <h2 *ngSwitchCase="'lap'">laptop</h2>
+    
+</div> 
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<div class="container">
+<div class="row">
+    <div class="col-md-3">
+
+        <input type="text" name="" class="form-control" #uname placeholder="UserName">
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-success" (click)="onCreate(uname)">Create User</button>
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-danger" (click)="onRemove(uname)">Remove</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-10">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>UserName</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of Users">
+                       <td>{{user.name}}</td>
+                    </tr>
+                </tbody>
+        </table>
+
+        
+    </div>
+</div>
